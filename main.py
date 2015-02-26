@@ -14,10 +14,12 @@ while p.hasQuestions():
   # Faz a pergunta
   r = raw_input("%s ? (0 ou 1): " % perg['pergunta']) 
   
-  if r.isdigit():
-    p.answer(perg, r)
-  else:
-    print "Você deve responder com um numero"
-  pass
+  while not r.isdigit():
+    print "Você deve responder com um numero!"
+    
+    r = raw_input("%s ? (0 ou 1): " % perg['pergunta']) 
+  
+  # Responde a questao  
+  p.answer(perg, r)
 
 print p.getWinner()

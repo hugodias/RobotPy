@@ -66,12 +66,9 @@ class Robo:
     self.destativaBloco(pergunta['bloco'])
 
   def destativaBloco(self, bloco):
-    count = 1
     for idx, x in enumerate(self.perguntas):
-    
       if int(x['bloco']) is int(bloco):
         self.perguntas[idx]['show'] = False
-        count += 1
         
   def getWinner(self):
-    return Counter(self.repostas)
+    return Counter(self.respostas)
