@@ -9,14 +9,14 @@ with open('regras.txt') as f:
 p = Robo(helper)
 
 while p.hasQuestions():
+  r = "zero"
   perg = p.question()
 
-  # Faz a pergunta
-  r = raw_input("%s ? (0 ou 1): " % perg['pergunta']) 
-  
   while not r.isdigit():
-    print "Você deve responder com um numero!"
-    
+    if r is not "zero":
+      print "Você deve responder com um numero!"
+
+    # Recupera a resposta do usuario
     r = raw_input("%s ? (0 ou 1): " % perg['pergunta']) 
   
   # Responde a questao  
