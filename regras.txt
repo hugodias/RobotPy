@@ -1,0 +1,15 @@
+SE gosta de futebol ENTÃO Brasil
+SE gosta de futebol ENTÃO Russia
+SE gosta de futebol ENTÃO Argentina
+SE gosta de volei ENTÃO Russia
+SE gosta de volei ENTÃO Austrália
+SE gosta de volei ENTÃO Veneza
+SE gosta de vinho ENTÃO Austrália
+SE gosta de vinho ENTÃO Chile
+SE gosta de vinho ENTÃO Veneza
+SE gosta de whiskey ENTÃO Suécia
+SE gosta de whiskey ENTÃO Austrália
+SE gosta de whiskey ENTÃO Paris
+SE gosta de vodka ENTÃO Russia
+SE gosta de vodka ENTÃO Alemanha
+SE gosta de vodka ENTÃO Chile
