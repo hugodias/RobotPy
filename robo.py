@@ -18,11 +18,12 @@ class Robo:
 
     for index, y in enumerate(x):
       q = y.replace("SE ", "").split("ENTÃO ")
-      j = {}
-      j['sentenca'] = y
-      j['pergunta'] = q[0]
-      j['resposta'] = q[1]
-      j['show'] = True
+      j = {
+        "sentenca": y,
+        "pergunta": q[0],
+        "resposta": q[1],
+        "show": True
+      }
 
       # Verifica se a ultima pergunta e igual a atual
       # se for atual o bloco permanece o mesmo
