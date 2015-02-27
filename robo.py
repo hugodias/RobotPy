@@ -72,4 +72,10 @@ class Robo:
         self.perguntas[idx]['show'] = False
         
   def getWinner(self):
-    return Counter(self.respostas)
+    winner = Counter(self.respostas)
+
+    if len(winner) > 1:
+      return "Seus gostos sao muito genericos. Recomendo que você visite um desses paises: %s" % ', '.join(list(winner)).replace('\n','')
+    else:
+      return "Va para %s" % list(winner)[0]
+

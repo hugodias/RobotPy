@@ -17,7 +17,7 @@ while p.hasQuestions():
       print "Você deve responder com um numero!"
 
     # Recupera a resposta do usuario
-    r = raw_input("%s ? (0 ou 1): " % perg['pergunta']) 
+    r = raw_input("%s? (0 ou 1): " % perg['pergunta']) 
   
   # Responde a questao  
   p.answer(perg, r)
